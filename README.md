@@ -1,5 +1,9 @@
 # Water leakage protection system
 
+<p align="center">
+  <img src="documentation/Image.png" alt="" width="300">
+</p>
+
 ## System description
 
 This project implements a water leakage protection controller based on AVR microcontroller.
