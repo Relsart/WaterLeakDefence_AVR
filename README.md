@@ -1,7 +1,7 @@
 # Water leakage protection system
 
-<p align="center">
-  <img src="documentation/Image.png" alt="" width="300">
+<p align="left">
+  <img src="documentation/Image.png" alt="" width="350">
 </p>
 
 ## System description
