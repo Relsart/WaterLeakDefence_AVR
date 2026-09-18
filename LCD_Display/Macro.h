@@ -1,0 +1,25 @@
+
+#ifndef MACRO_H_
+#define MACRO_H_
+
+#include "LCD.h"
+
+#define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+#define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+#define READ_BIT(REG, BIT)    ((REG) & (BIT))
+
+#define SET_DB7     SET_BIT(LCD_DB7_PORT, 1 << LCD_DB7_PIN)
+#define CLEAR_DB7   CLEAR_BIT(LCD_DB7_PORT, 1 << LCD_DB7_PIN)
+#define SET_DB6     SET_BIT(LCD_DB6_PORT, 1 << LCD_DB6_PIN)
+#define CLEAR_DB6   CLEAR_BIT(LCD_DB6_PORT, 1 << LCD_DB6_PIN)
+#define SET_DB5     SET_BIT(LCD_DB5_PORT, 1 << LCD_DB5_PIN)
+#define CLEAR_DB5   CLEAR_BIT(LCD_DB5_PORT, 1 << LCD_DB5_PIN)
+#define SET_DB4     SET_BIT(LCD_DB4_PORT, 1 << LCD_DB4_PIN)
+#define CLEAR_DB4   CLEAR_BIT(LCD_DB4_PORT, 1 << LCD_DB4_PIN)
+
+#define SET_EN      SET_BIT(LCD_EN_PORT, 1 << LCD_EN_PIN)
+#define CLEAR_EN    CLEAR_BIT(LCD_EN_PORT, 1 << LCD_EN_PIN)
+#define SET_RS      SET_BIT(LCD_RS_PORT, 1 << LCD_RS_PIN)
+#define CLEAR_RS    CLEAR_BIT(LCD_RS_PORT, 1 << LCD_RS_PIN)
+
+#endif /* MACRO_H_ */
